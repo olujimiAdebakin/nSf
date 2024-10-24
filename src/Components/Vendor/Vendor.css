@@ -1,0 +1,244 @@
+.vendor{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.vendor-top{
+    background: var(--Foundation-Primary-primary-900, #063712);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 12px ;
+    gap: 10px;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.vendor-top-left{
+    width: 90px;
+    height: 90px;
+}
+
+.vendor-top-left img{
+    width: 100%;
+    height: 100%;
+}
+
+.vendor-top-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 20px;
+}
+
+.vendor-top-flex h3{
+    color: #fff;
+}
+
+.vendor-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.vendor-detail h3{
+    color: #F5FFF8;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #F5FFF8;
+font-family: Paris2024;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.vendor-assgn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.vendor-assgn span{
+    color: #C8C8C8;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #C8C8C8;
+font-family: Paris2024;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.meal-view{
+    display: flex;
+    justify-content: center;
+}
+
+.meal-view h3{
+    color: #C8C8C8;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #C8C8C8;
+font-family: Paris2024;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.meal-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.meal-num-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal-num-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal-num-left h3{
+    color: #F5FFF8;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #F5FFF8;
+font-family: Paris2024;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.meal-num-right h3{
+    color: #F5FFF8;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #F5FFF8;
+font-family: Paris2024;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.meal-num-left span{
+    color: #C8C8C8;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #C8C8C8;
+font-family: Paris2024;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.meal-num-right span{
+    color: #C8C8C8;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #C8C8C8;
+font-family: Paris2024;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+.vendor-profile{
+    display: flex;
+    justify-content: center;
+}
+
+.vendor-profile a{
+    display: flex;
+width: 236px;
+height: 48px;
+padding: 9px 14px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 6px;
+border: 1px solid #0E842C;
+color: #0E842C;
+font-family: Paris2024;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; 
+text-transform: capitalize;
+}
+
+.vendor-down{
+    background-color: #fff;
+       box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vendor-box{
+    background: white;
+      /* box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06); */
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+}
+
+.vendor-state{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.vendor-state h3{
+    border-radius: 1000px;
+background: #F5FFF8;
+box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.06);
+display: flex;
+padding: 30px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* gap: 24px; */
+align-self: stretch;
+color: #000;
+-webkit-text-stroke-width: 0.20000000298023224;
+-webkit-text-stroke-color: #000;
+font-family: Paris2024;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+}
+
+.logout a{
+    display: flex;
+width: 364px;
+height: 48px;
+padding: 9px 14px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+border: 1px solid #0E842C;
+}
