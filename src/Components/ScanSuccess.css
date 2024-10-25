@@ -1,0 +1,100 @@
+.success-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    gap: 50px;
+}
+
+
+.success-header{
+    display: flex;
+    justify-content: center;
+}
+
+.success-header h3{
+    color: #000;
+font-family: Paris2024;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 75% */
+text-transform: capitalize;
+}
+
+.success-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.success-img img{
+    width: 40px;
+    height: 40px;
+}
+
+.success-img h2{
+    color: #0E842C;
+text-align: center;
+font-family: "General Sans Variable";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+}
+
+.success-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.success-detail p{
+        color: #171837;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+letter-spacing: 0.25px;
+width: 360px;
+}
+
+.vendor-feel{
+    display: flex;
+    justify-content: center;
+}
+
+.vendor-feel p{
+    color: #171837;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; 
+letter-spacing: 0.25px;
+width: 360px;
+}
+
+.bttn{
+    display: flex;
+    justify-content: center;
+}
+
+.bttn button{
+    border-radius: 6px;
+background: var(--Foundation-Primary-primary-500, #0E842C);
+display: flex;
+width: 363px;
+height: 48px;
+padding: 9px 14px 9px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border: none;
+color: #fff;
+}

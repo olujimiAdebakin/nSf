@@ -1,25 +1,32 @@
 import React, { useEffect } from "react";
-import "./Barcode.css"
+import "./Barcode.css";
 import JsBarcode from "jsbarcode";
-import { useNavigate } from "react-router-dom";
+import arrow from "../../assets/Vector.png";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const BarcodePage = () => {
-  const navigate = useNavigate();
-
+    const navigate = useNavigate();
+    const location = useLocation();
+  const { mealsServed, allocatedMeals, vendorId } = location.state || {};
+  const barcodeData = "OG-123-45678";
 
   useEffect(() => {
-    JsBarcode("#barcode", "123456789012", {
+    JsBarcode("#barcode", "OG-123-45678", {
       format: "CODE128",
       lineColor: "#000",
       width: 3,
       height: 200,
       displayValue: true,
     });
-  }, []);
 
-  const handleBack = () => {
-    navigate("/vendor");
-  };
+    const timeout = setTimeout(() => {
+      navigate("/barcode-scanner", {
+        state: { mealsServed, allocatedMeals, vendorId },
+      });
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, [navigate, mealsServed, allocatedMeals, vendorId, barcodeData]);
 
   return (
     <div className="barcode">
@@ -32,7 +39,7 @@ const BarcodePage = () => {
       </div>
       <div className="barcode-bottom">
         <svg id="barcode"></svg>
-        <button onClick={handleBack}>Go Back</button>
+        <button>Scan QR Code</button>
       </div>
     </div>
   );

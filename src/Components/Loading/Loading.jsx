@@ -21,15 +21,15 @@ const Loading = () => {
         } else {
           clearInterval(timer);
         }
-      }, 300); 
+      }, 200); 
     };
 
     typeWriterEffect();
 
     
     const redirectTimer = setTimeout(() => {
-      navigate("/login");
-    }, 12400);
+      navigate("/vendor");
+    }, 7900);
 
     return () => {
       clearInterval(timer); 

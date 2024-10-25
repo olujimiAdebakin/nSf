@@ -231,7 +231,7 @@ line-height: normal;
     justify-content: center;
 }
 
-.logout a{
+.logout h3{
     display: flex;
 width: 364px;
 height: 48px;
@@ -241,4 +241,21 @@ align-items: center;
 gap: 10px;
 border-radius: 6px;
 border: 1px solid #0E842C;
+}
+
+@media (max-width:420px) {
+
+    .vendor{
+        width: 100%;
+    }
+
+    .vendor-top{
+        align-items: center;
+        width: 100%;
+    }
+
+    .vendor-top-flex{
+        justify-content: center;
+        gap: 100px;
+    }
 }

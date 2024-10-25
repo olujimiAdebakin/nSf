@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  overflow: hidden;
+  /* overflow-x: hidden; */
   /* width: 100vw; */
    font-family: "Quicksand", sans-serif;
    cursor: pointer;

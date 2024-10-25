@@ -1,6 +1,7 @@
 .barcode{
 display: flex;
 flex-direction: column;
+gap: 40px;
 align-items: center;
 margin: 60px auto;
 }
@@ -9,7 +10,7 @@ margin: 60px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 65px;
+    gap: 50px;
 }
 
 .barcode-header h3{
@@ -29,7 +30,7 @@ font-family: Paris2024;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 133.333% */
+line-height: 30px; 
 text-transform: capitalize;
 width: 288px;
 flex-shrink: 0;
@@ -38,5 +39,28 @@ flex-shrink: 0;
 .barcode-bottom{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    gap: 60px;
 }
+
+.barcode-bottom button{
+    display: flex;
+width: 363px;
+height: 48px;
+padding: 9px 14px 9px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+color: #FFF;
+font-family: "Source Sans Pro";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px;
+text-transform: capitalize;
+border-radius: 6px;
+border:none;
+background: var(--Foundation-Primary-primary-500, #0E842C);
+}
+

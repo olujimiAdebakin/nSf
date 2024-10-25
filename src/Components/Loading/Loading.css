@@ -1,12 +1,12 @@
 .loading{
   background: var(--Foundation-Primary-primary-900, #063712);
   height: 100vh;
-  position: relative;
-  overflow: hidden;
+   /* margin: 140px auto; */
+  /* position: relative; */
 }
 
 .loading-main{
-    margin: 140px auto;
+    padding-top: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,8 +14,8 @@
 }
 
 .loading-image{
-    width: 350px;
-    height: 350px;
+    width:500px;
+    height:auto;
 }
 
 .loading-image img{
@@ -40,25 +40,23 @@ font-size: 25px;
 font-weight: 700;
 text-align: center;
 letter-spacing: 2px;
+line-height: 30px;
 }
 
 @media (max-width:820px) {
     .loading-main{
-    margin: 300px auto;
     display: flex;
     justify-content: center;
 }
 
-.loading-image{
-    width: 400px;
-    height: 400px;
-}
 }
 
 @media (max-width:420px) {
     .loading-main{
-    margin: 150px auto;
+        padding-top: 90px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
