@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Assuming you're using react-router for navigation
-import ogun_games from "../../assets/GATEWAY-GAMES.png";
+import ogun_games from "../../assets/gateway.png";
 import eye from "../../assets/eye.png";
 import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false); // Loading state
-  const [error, setError] = useState(""); // Error state for validation messages
+  const [loading, setLoading] = useState(false); 
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   // Email validation function
@@ -16,12 +16,12 @@ const Login = () => {
     return /\S+@\S+\.\S+/.test(email);
   };
 
-  // Function to handle form submission
+ 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setError(""); // Reset any previous error messages
+    setError(""); 
 
-    // Basic validation
+    
     if (!email || !password) {
       setError("Please enter both email and password");
       return;
@@ -42,6 +42,9 @@ const Login = () => {
       localStorage.setItem("email", email);
       localStorage.setItem("password", password);
 
+        setEmail("");
+        setPassword("");
+
      
       navigate("/vendor");
     } catch (error) {
@@ -57,7 +60,7 @@ const Login = () => {
       <div className="login">
         <div className="login-top">
           <div className="login-top-img">
-            {/* <img src={ogun_games} alt="" /> */}
+            <img src={ogun_games} alt="" />
           </div>
         </div>
         <form className="form" onSubmit={handleLogin}>

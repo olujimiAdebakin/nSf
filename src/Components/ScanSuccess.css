@@ -76,7 +76,12 @@ font-style: normal;
 font-weight: 400;
 line-height: 27px; 
 letter-spacing: 0.25px;
-width: 360px;
+width: 390px;
+}
+
+.vendor-feel span{
+    color: #0E842C;
+    font-weight: 700;
 }
 
 .bttn{

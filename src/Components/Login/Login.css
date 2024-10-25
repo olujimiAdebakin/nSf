@@ -20,8 +20,13 @@
     font-weight: 500;
 }
 
+.login-top-img{
+    display: flex;
+    justify-content: center;
+}
+
 .login-top-img img{
-   
+   width: 200px;
 }
 
 .form{

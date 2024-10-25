@@ -42,11 +42,9 @@ const ScanSuccessPage = () => {
         <p>Scan Time: {scanTime}</p> */}
         <div className="vendor-feel">
           <p>
-            Successfully clocked in for {name} {id} for {mealType} on {scanDate}       
-
-            ,{scanTime}
-            
-            2024.
+            Successfully clocked in for <span>{name}</span> {id} for{" "}
+            <span>{mealType}</span> on <span>{scanDate}</span>,{" "}
+            <span>{scanTime}</span> <p> 2024.</p>
           </p>
         </div>
       </div>
