@@ -15,6 +15,7 @@ const ScannerPage = () => {
      console.log(result);
      setScanResult(result.text || result.data);
      setScanning(false);
+     validateParticipantId(result.text);
 
      // Capture current date and time
      const currentDate = new Date();
@@ -48,6 +49,18 @@ const ScannerPage = () => {
   const handleError = (err) => {
     console.error(err);
   };
+
+     const validateParticipantId = (participantId) => {
+       // Replace this with actual validation logic
+       // For example, you might want to call an API to check if the ID exists
+       const isValid = participantId === "expectedParticipantId"; // Dummy check
+       if (isValid) {
+         navigate("/scan-success", { state: { participantId } });
+       } else {
+         alert("Invalid ID. Please scan a valid participant ID.");
+         setScanning(true); // Restart scanning if invalid
+       }
+     };
 
   return (
     <div className="barcode-scanner-container">

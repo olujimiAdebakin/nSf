@@ -95,9 +95,9 @@ border: 1px solid var(--Foundation-Primary-primary-500, #0E842C);
 
 .eye{
     position: absolute;
-    top: 25.4rem;
-    right:10rem;
-    left:65rem;
+    top: 24.4rem;
+    right:20rem;
+    left:60rem;
     bottom: 0;
 }
 
@@ -225,5 +225,9 @@ line-height: normal;
 
     .form-dont-have p{
         gap: 8px;
+    }
+
+    .eye{
+        display: none;
     }
 }

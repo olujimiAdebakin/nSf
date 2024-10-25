@@ -4,14 +4,14 @@ import JsBarcode from "jsbarcode";
 import arrow from "../../assets/Vector.png";
 import { useLocation, useNavigate } from "react-router-dom";
 
-const BarcodePage = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
+const BarcodePage = ({ participantId }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const { mealsServed, allocatedMeals, vendorId } = location.state || {};
   const barcodeData = "OG-123-45678";
 
   useEffect(() => {
-    JsBarcode("#barcode", "OG-123-45678", {
+    JsBarcode("#barcode", "OG-123-45678", participantId, {
       format: "CODE128",
       lineColor: "#000",
       width: 3,
@@ -26,7 +26,14 @@ const BarcodePage = () => {
     }, 3000);
 
     return () => clearTimeout(timeout);
-  }, [navigate, mealsServed, allocatedMeals, vendorId, barcodeData]);
+  }, [
+    navigate,
+    mealsServed,
+    allocatedMeals,
+    vendorId,
+    participantId,
+    barcodeData,
+  ]);
 
   return (
     <div className="barcode">
