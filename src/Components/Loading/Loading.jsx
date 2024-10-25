@@ -28,7 +28,7 @@ const Loading = () => {
 
     
     const redirectTimer = setTimeout(() => {
-      navigate("/vendor");
+      navigate("/login");
     }, 7900);
 
     return () => {
