@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import QrScanner from "react-qr-barcode-scanner"; // Import barcode scanner
 import "./ScannerPage.css";
